@@ -130,7 +130,7 @@ h2 {
 .education-work-experience-picture-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-items: start;
+  justify-items: center;
 }
 .education-work-experience {
   margin: 1rem 0 1rem 2rem;
