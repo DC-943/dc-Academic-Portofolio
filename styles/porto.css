@@ -96,11 +96,14 @@ h2 {
   flex-direction: column;
   position: relative;
   /* background-color: #002d72; */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .avatar {
   position: absolute;
-  top: 2rem;
+  top: 2.5rem;
   left: 3rem;
   border-radius: 5px;
   max-width: 60%;
@@ -109,9 +112,9 @@ h2 {
 .avatar-links {
   display: flex;
   position: absolute;
-  left: 2rem;
+  left: 3.3rem;
   top: 23.5rem;
-  width: 14.5rem;
+  /* width: 14.5rem; */
   align-items: center;
   justify-content: center;
   gap: 1rem;
