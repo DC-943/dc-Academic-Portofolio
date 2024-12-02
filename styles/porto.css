@@ -42,6 +42,10 @@ header p {
   margin: 5px 0;
 }
 
+h2 {
+  color: #002d72;
+}
+
 /* Navigation */
 nav ul {
   background: #333;
@@ -69,18 +73,10 @@ nav ul li a:hover {
 
 /* Main Content */
 main {
-  height: calc(80vh - 10px);
-  padding: 2px;
+  /* height: calc(70vh - 10px); */
+  padding: 0 20px;
   overflow-y: auto;
   /* border: 1px solid #ccc;  */
-}
-
-/* section {
-  margin-bottom: 20px;
-} */
-
-h2 {
-  color: #002d72;
 }
 
 /******* About Me *********/
@@ -89,16 +85,22 @@ h2 {
   grid-template-columns: 1fr 3fr;
   /* background-color: green; */
   min-height: 100vh;
-  flex: 1;
 }
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
 .avatar-container {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* background-color: #002d72; */
+  /* background-color: pink; */
   text-align: center;
   align-items: center;
   justify-content: center;
+  position: sticky;
 }
 
 .avatar {
@@ -107,6 +109,7 @@ h2 {
   left: 3rem;
   border-radius: 5px;
   max-width: 60%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .avatar-links {
@@ -118,7 +121,6 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  /* background-color: red; */
 }
 .avatar-links a {
   text-decoration: none;
@@ -129,7 +131,12 @@ h2 {
   /* background-color: lightblue; */
   height: 100%;
   text-align: left;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
+  height: calc(80vh - 10px);
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  position: relative;
+  padding: 1rem 0;
 }
 .user-description h2 {
   margin-top: 2rem;
@@ -138,18 +145,40 @@ h2 {
 .user-description p {
   margin-top: 0.5rem;
 }
-
-/******* Education and Work Experience *********/
-.education-work-experience-picture-container {
+.user-description a:last-child {
+  color: #333;
+}
+.user-description a:last-child:hover {
+  color: #0056b3;
+}
+.picture {
+  margin-top: 2rem;
+}
+.picture-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-.education-work-experience {
-  margin-left: 3rem;
-}
-.education-work-experience h2 {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
+}
+.picture-container1 {
+  display: grid;
+  grid-template-rows: 1rf 1fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/******* Education and Experience *********/
+.education-experience-container {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  flex-direction: column;
+  justify-items: center;
+  margin: 2rem 10rem 2rem 10rem;
+}
+.education-experience h2 {
+  text-align: flex-left;
 }
 
 /******* publications *********/
@@ -163,22 +192,71 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
 .publications a {
   text-decoration: none;
 }
 
 /******* contact *********/
 .contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  min-height: 100vh;
-  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: left;
+  min-height: calc(80vh - 8px);
+  overflow-y: auto;
+  border-left: 1px solid #ccc;
+  position: relative;
 }
-.contact-container h2 {
+
+.contact-info {
+  position: absolute;
+  height: 95%;
+  z-index: 0;
+  margin: 0rem 5rem 2rem 5rem;
+}
+.contact-info p2 {
+  margin: 0;
+}
+.contact-info h2 {
   text-align: center;
+  margin: 0.3rem 0;
+}
+.contact-info p {
+  margin: 0.3rem 2rem;
+}
+.contact-info ol li {
+  margin: 0.1rem 3rem;
+}
+.contact-info a:nth-last-child(2) {
+  margin: 2rem 2rem;
+}
+.contact-info a:nth-last-child(1) {
+  margin: 2rem 0;
+}
+.contact-info a:nth-last-child(2):hover {
+  color: #0056b3;
+}
+.contact-info a:nth-last-child(1):hover {
+  color: #0056b3;
+}
+.contact-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 28%;
+  width: 40%;
+  bottom: -10rem;
+  right: 9rem;
+  z-index: 10;
+  /* background-color: green; */
+}
+.contact-image img {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 /**** Footer ********/
@@ -190,4 +268,14 @@ h2 {
   padding: 3px;
   background-color: #333333;
   color: white;
+}
+.footer p:hover {
+  color: #ffc600;
+}
+
+@media only screen and (max-width: 60em) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
