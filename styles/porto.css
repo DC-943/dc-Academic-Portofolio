@@ -116,7 +116,7 @@ a:hover {
   display: flex;
   position: absolute;
   left: 3.3rem;
-  top: 23.5rem;
+  bottom: 13rem;
   /* width: 14.5rem; */
   align-items: center;
   justify-content: center;
@@ -124,8 +124,9 @@ a:hover {
 }
 .avatar-links a {
   text-decoration: none;
-  color: #002d72;
+  color: #ffc600;
   font-size: 1rem;
+  font-weight: bolder;
 }
 .user-description {
   /* background-color: lightblue; */
