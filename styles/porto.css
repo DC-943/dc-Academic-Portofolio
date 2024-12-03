@@ -280,10 +280,21 @@ a:hover {
 .footer p:hover {
   color: #ffc600;
 }
+/* widescreen */
+@media only screen and (max-width: 1200px) {
+}
+/* normal  */
+@media only screen and (max-width: 992px) {
+}
+/* tablet  */
+@media only screen and (max-width: 768px) {
+}
+/*smartphone  */
+@media only screen and (max-width: 576px) {
+}
+/* landscape */
+@media (orientation: landscape) {
+}
 
-@media only screen and (max-width: 60em) {
-  .card-container {
-    display: flex;
-    flex-direction: column;
-  }
+@media (max-height: 500px) {
 }
