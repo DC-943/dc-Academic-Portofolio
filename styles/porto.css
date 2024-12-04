@@ -133,18 +133,22 @@ a:hover {
 .avatar-container {
   display: flex;
   flex-direction: column;
+  /* display: grid;
+  grid-template-rows: 3fr 1fr; */
   position: relative;
-  /*background-color: pink;*/
+  /* background-color: pink; */
   text-align: center;
   align-items: center;
-  justify-content: center;
-  position: sticky;
+  height: 65%;
+  width: 100%;
 }
 
 .avatar {
   position: absolute;
-  top: 3.5rem;
-  left: 3rem;
+  top: 14%;
+  left: 20%;
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
   max-width: 60%;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -153,18 +157,20 @@ a:hover {
 .avatar-links {
   display: flex;
   position: absolute;
-  left: 3.3rem;
-  bottom: 12rem;
+  left: 30%;
+  bottom: 0rem;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
   cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .avatar-links a {
   text-decoration: none;
   color: #ffc600;
   font-size: 1rem;
+  padding: 1rem;
   font-weight: bolder;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -331,8 +337,8 @@ a:hover {
   .avatar-links {
     display: flex;
     position: absolute;
-    left: 3rem;
-    bottom: 13rem;
+    left: 23%;
+    bottom: 30%;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -364,8 +370,8 @@ a:hover {
   .avatar-links {
     display: flex;
     position: absolute;
-    left: 2.5rem;
-    bottom: 15rem;
+    left: 23%;
+    bottom: 30%;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -402,8 +408,8 @@ a:hover {
   .avatar-links {
     display: flex;
     position: absolute;
-    left: 2.5rem;
-    bottom: 16rem;
+    left: 23%;
+    bottom: 40%;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
@@ -442,25 +448,26 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .avatar {
     position: absolute;
-    top: 2.5rem;
-    left: 2.5rem;
+    top: 14%;
+    left: 10%;
     border-radius: 5px;
-    max-width: 60%;
+    max-width: 80%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
 
   .avatar-links {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     position: absolute;
-    left: 2.7rem;
-    bottom: 19rem;
+    left: 20%;
+    bottom: 40%;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
   }
   .avatar-links a {
     font-size: small;
+    padding: 0.625rem;
   }
   .education-experience-container {
     margin: 0rem 3rem;
@@ -542,19 +549,11 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
-  .avatar-container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    /* background-color: pink; */
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
+
   .avatar {
     position: absolute;
-    top: 3.5rem;
-    left: 1rem;
+    top: 14%;
+    left: 20%;
     border-radius: 5px;
     max-width: 60%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -565,8 +564,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 0rem;
-    top: 5rem;
+    left: 23%;
+    bottom: 50%;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -615,23 +614,25 @@ a:hover {
     margin: 0;
     padding: 0;
     font-size: 0.8rem;
+    line-height: 1.2rem;
   }
 
   .contact-info h2 {
     text-align: center;
-    margin: 0.3rem 0;
+    margin: 0;
+    padding: 0;
   }
   .contact-info p {
-    margin: 0.3rem 0;
+    margin: 0;
+    padding: 0;
   }
   .contact-info ol li {
-    margin: 0.1rem 0;
-  }
-  .contact-info a:nth-last-child(2) {
-    margin: 1rem 0;
+    margin: 0;
+    padding: 0;
   }
   .contact-info a:nth-last-child(1) {
-    margin: 1rem 0;
+    margin: 0;
+    padding: 0;
   }
   .footer {
     font-size: 0.8rem;
