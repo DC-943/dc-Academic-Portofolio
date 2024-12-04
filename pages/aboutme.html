@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/porto.css" />
     <link rel="icon" type="image/png" sizes="20*20" href="../data/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Me</title>
   </head>
   <body>
@@ -23,8 +24,9 @@
         </h3>
       </div>
     </header>
-    <nav>
-      <ul>
+    <nav class="navbar-container">
+      <!-- main menu -->
+      <ul class="main-menu">
         <li><a href="./aboutme.html">About Me</a></li>
         <li>
           <a href="./education-work.html">Education & Experience</a>
@@ -33,25 +35,25 @@
         <li><a href="./contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main class="user-container">
-      <div class="avatar-container">
-        <div class="image-container">
+    <main>
+    <div class="user-container">
+      <div class="avatar-container">   
           <img
             class="avatar"
             src="../data/avarta.jpg"
-            alt="Jinging Meng's image"
+            alt="Jingjing Meng's image"
             width="100%"
             height="auto"
           />
-        </div>
-        <div class="avatar-links">
-          <a
-            href="https://scholar.google.com.au/citations?user=XEM8_QkAAAAJ&hl=en"
-            target="_blank"
-            >Google Scholar</a
-          >
-          <a href="../data/cv.pdf" target="_blank">中文简历</a>
-        </div>
+          <div class="avatar-links">
+            <a
+              href="https://scholar.google.com.au/citations?user=XEM8_QkAAAAJ&hl=en"
+              target="_blank"
+              >Google Scholar</a
+            >
+            <a href="../data/cv.pdf" target="_blank">中文简历</a>
+          </div>
+       
       </div>
       <div class="user-description">
         <h2>About Me</h2>
@@ -162,7 +164,7 @@
         </div>
         </div>
       </div>
-      
+    </div>
     </main>
     <footer class="footer">
       <p>
@@ -170,5 +172,6 @@
         reserved.
       </p>
     </footer>
+    <script src="../scripts/scripts.js"></script>
   </body>
 </html>

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/porto.css" />
-    <link rel="icon" type="image/png" sizes="20*20" href="./data/favicon.png">
+    <link rel="stylesheet" href="../styles/porto.css" />
+    <link rel="icon" type="image/png" sizes="20*20" href="../data/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About Me</title>
   </head>
   <body>
@@ -23,37 +24,54 @@
         </h3>
       </div>
     </header>
-    <nav>
-      <ul>
-        <li><a href="./pages/aboutme.html">About Me</a></li>
+    <nav class="navbar-container">
+      <!-- main menu -->
+      <ul class="main-menu">
+        <li><a href="./aboutme.html">About Me</a></li>
         <li>
-          <a href="./pages/education-work.html">Education & Experience</a>
+          <a href="./education-work.html">Education & Experience</a>
         </li>
-        <li><a href="./pages/publications.html">Publications</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
+        <li><a href="./publications.html">Publications</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
+      <!-- mobile menu -->
+       <div class="mobile-menu">
+        <div class="mobile-menu-toggle">
+          <i class="fa fa-bars" style="color:azure"></i>          
+        </div>
+       </div>
     </nav>
-    <main class="user-container">
-      <div class="avatar-container">
-        <div class="image-container">
+    <main>
+    <div class="user-container">
+      <div class="avatar-container">   
           <img
             class="avatar"
-            src="./data/avarta.jpg"
-            alt="Jinging Meng's image"
+            src="../data/avarta.jpg"
+            alt="Jingjing Meng's image"
             width="100%"
             height="auto"
           />
-        </div>
-        <div class="avatar-links">
-          <a
-            href="https://scholar.google.com.au/citations?user=XEM8_QkAAAAJ&hl=en"
-            target="_blank"
-            >Google Scholar</a
-          >
-          <a href="./data/cv.pdf" target="_blank">中文简历</a>
-        </div>
+          <div class="avatar-links">
+            <a
+              href="https://scholar.google.com.au/citations?user=XEM8_QkAAAAJ&hl=en"
+              target="_blank"
+              >Google Scholar</a
+            >
+            <a href="../data/cv.pdf" target="_blank">中文简历</a>
+          </div>
+       
       </div>
       <div class="user-description">
+        <div class="mobile-menu-items">
+          <ul class="mobile-menu-list">
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li>
+              <a href="./education-work.html">Education & Experience</a>
+            </li>
+            <li><a href="./publications.html">Publications</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
         <h2>About Me</h2>
         <p>
           Dr Jinging Meng joined the School of Infrastructure Engineering,
@@ -101,7 +119,7 @@
               researchers. If you are interested in working with me, please feel
               free to drop me an email. More details about Ph.D scholarship from
               the University of Newcastle, Australia, can be found
-              <a href="./pages/contact.html">here</a></strong
+              <a href="./contact.html">here</a></strong
             ></i
           >
         </p>
@@ -116,7 +134,7 @@
               <img
                 width="60%"
                 height="auto"
-                src="./data/image2.gif"
+                src="../data/image2.gif"
                 alt="Instability of Rock Mass Systems"
               />
               <p>Fig.1 &nbsp; Instability of Rock Mass Systems </p>
@@ -125,7 +143,7 @@
               <img
                 width="60%"
                 height="auto"
-                src="./data/image4.gif"
+                src="../data/image4.gif"
                 alt="Collapse of Granular Materials."
               />
               <p>Fig.2 &nbsp;Collapse of Granular Materials</p>
@@ -134,7 +152,7 @@
               <img
                 width="80%"
                 height="auto"
-                src="./data/image5.gif"
+                src="../data/image5.gif"
                 alt="Sensitive Clay Slope Landslide"
               />
               <p>Fig.3 &nbsp;Sensitive Clay Slope Landslide</p>
@@ -145,7 +163,7 @@
             <img
               width="80%"
               height="auto"
-              src="./data/image1.gif"
+              src="../data/image1.gif"
               alt="Simulation of Submarine Landslide Processes"
             />
             <p>Fig.4 &nbsp;Simulation of Submarine Landslide Processes</p>
@@ -154,7 +172,7 @@
             <img
               width="80%"
               height="auto"
-              src="./data/image3.png"
+              src="../data/image3.png"
               alt="Interaction of Granular Structures"
             />
             <p>Fig.5 &nbsp;Instability of Rock Mass Systems</p>
@@ -162,7 +180,7 @@
         </div>
         </div>
       </div>
-      
+    </div>
     </main>
     <footer class="footer">
       <p>
