@@ -565,7 +565,7 @@ a:hover {
     flex-direction: column;
     position: absolute;
     left: 23%;
-    bottom: 50%;
+    bottom: 40%;
     align-items: center;
     justify-content: center;
     cursor: pointer;
