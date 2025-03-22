@@ -599,7 +599,7 @@ a:hover {
   }
   .contact-info {
     /* margin-top: 1rem; */
-    margin: 1rem auto;
+    margin: 0rem auto;
     padding: 2rem;
   }
 
@@ -613,7 +613,7 @@ a:hover {
     padding: 0;
   }
   .contact-info ol li {
-    margin: 0;
+    margin-left: 0.7rem;
     padding: 0;
   }
   .contact-info a:last-child(1) {
